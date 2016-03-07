@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="css/assets/persons-0106.png"
+
+    <meta charset="UTF-8">
+    <title>VOTE</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800' rel='stylesheet' type='text/css'>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+     <!--JS-->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript" src="js/chart.min.js"></script>
+    <script type="text/javascript" src="js/datamap.usa.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+
+<body>
+    <div id="fullpage">
+
+    <div class="section interactive">
+
+            <div class="box"> <!-- Guessing Section -->
+
+                <h1 id="title"><i class="fa fa-star"></i> Does my vote count? <i class="fa fa-star"></i></h1>
+                    <p id="typein"> Select your state </p>
+                    <form>
+                        <select name="state" id="statecode">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+
+                        <button type="submit" id="btn" name="go"><a href="#secondPage">G O</a></button>
+                    </form>
+
+            </div>
+
+    </div>
+
+    <div class="section slides">
+
+            <div class="slide">
+
+                <div class="left">
+                    <img src="css/assets/cali.svg.png" height="400px">
+                </div>
+
+                <div class="right">
+                    <h2>California</h2>
+
+                    <div id="data">
+                        <p> You vote is not worth one vote, instead, it is it is worth:</p>
+                        <p><strong id="num">0.8</strong> votes (<a href="http://www.ravi.io/how-much-is-one-vote-worth" target="_blank">See full stat</a>) </p>
+
+                        <p>California is a <strong>all or nothing</strong> state, </p>
+                        <p>that means all <strong>55</strong> delegates  went to the majority party: <br> <strong>Democrats</strong></p>
+                    </div>
+
+                    <div id="bar">
+                        <img src="css/assets/bar.png" width="60%">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="slide">
+
+                <div id="desertTitle"> <i class="fa fa-meh-o"> </i>  The Voting Desert  <i class="fa fa-meh-o"></i></div>
+                <p id="desertDes"> The voting desert portrays which States have a real impact on the election, <br> and which can be considered "deserts" where the majority of votes cast have little effect on the overall election.</p>
+                <img id="desert" src="css/assets/votingdesertmap.png">
+
+            </div>
+
+            <div class="slide">
+                <img id="speaker" src="css/assets/speaker.png" width="100px">
+                <h2> Getting your voice heard</h2>
+                <div id="involvement"> Involvement beyond election season <i class="fa fa-hand-peace-o"></i></div>
+                <p>________</p>
+
+                <div id="congress">
+                    <p>Find out who’s your congress men/women are today </p>
+                    <p>and check out what they are working on </p>
+                </div>
+
+                <div id="leave"><a href="https://www.opencongress.org/people/zipcodelookup" target="_blank">GO</a></div>
+
+            </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

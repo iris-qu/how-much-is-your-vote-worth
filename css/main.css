@@ -1,0 +1,250 @@
+* { padding: 0; margin: 0; }
+
+html body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 100%;
+    min-height: 100% !important;
+    background-color: white;
+    color: #3D3831;
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+.section {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    text-align:center;
+    overflow: hidden;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*INTERACTIVE*/
+
+
+.interactive{
+
+    background-image: url("assets/bk.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/*BOX*/
+
+.box {
+    position: relative;
+
+    background-color: #DDDEE0;
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 auto;
+
+    color: #595E65;
+
+    box-shadow: rgb(153,131,149) 1px 1px,
+    rgb(153,131,149)  2px 2px,
+    rgb(153,131,149) 3px 3px,
+    rgb(153,131,149) 4px 4px,
+    rgb(153,131,149) 5px 5px,
+    rgb(153,131,149) 6px 6px,
+    rgb(153,131,149)  7px 7px,
+    rgb(153,131,149)  8px 8px,
+    rgb(153,131,149)  9px 9px,
+    rgb(153,131,149)  10px 10px,
+    rgb(153,131,149)  11px 11px,
+    rgb(153,131,149)  12px 12px,
+    rgb(153,131,149)  13px 13px,
+    rgb(153,131,149) 14px 14px,
+    rgb(153,131,149)  15px 15px,
+    rgb(153,131,149) 16px 16px,
+    rgb(153,131,149)  17px 17px,
+    rgb(153,131,149)  18px 18px,
+    rgb(153,131,149) 19px 19px,
+    rgb(153,131,149) 20px 20px,
+    rgb(153,131,149) 21px 21px,
+    rgb(153,131,149)  22px 22px,
+    rgb(153,131,149) 23px 23px,
+    rgb(153,131,149) 24px 24px,
+    rgb(153,131,149)  25px 25px,
+    rgb(153,131,149) 26px 26px,
+    rgb(153,131,149)  27px 27px,
+    rgb(153,131,149) 28px 28px;
+}
+
+h1 {
+    background: #797DF0;
+    padding: 1em 0.4em;
+    font-size: 1.5em;
+    font-weight: 600;
+    display: block;
+    line-height: 1em;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #fff;
+}
+
+#typein{
+    margin-top: 12%;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#statecode {
+    width: 100px;
+    height: 70px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    font-size: 35px;
+    color: #595E65;
+    font-weight: 700;
+    border: solid 4px #595E65;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#btn {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em 0.2em;
+    background: #797DF0;
+    font-size:35px;
+    font-weight: 800;
+    display: block;
+    line-height: 1em;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #fff;
+}
+
+/* SLIDES */
+
+div.fp-controlArrow{
+    display: none;
+}
+
+.slides {
+    background: blue; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#163EF3, #EB4353); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#163EF3, #EB4353); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#163EF3, #EB4353); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#163EF3, #EB4353); /* Standard syntax */
+    color: white;
+    font-weight: 300;
+    font-size:
+}
+
+.fp-slidesNav ul li a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fp-slidesNav ul li a span {
+    background-color: white;
+    width: 9px !important;
+    height: 9px !important;
+}
+
+.fp-slidesNav ul li a.active span {
+    background-color: #3D3831 !important;
+}
+
+/*MAP*/
+
+#desertTitle {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#desert {
+    margin-top: 30px;
+    width: 50%;
+}
+
+#desertDes {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* DATA */
+
+.left {
+    float: left;
+    width: 45%;
+}
+
+.right {
+    float: right;
+    width: 55%;
+    text-align: left;
+    line-height: 200%;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+#data{
+     margin-top: 50px;
+}
+
+#num {
+    font-size: 50px;
+}
+
+#bar {
+    margin-top: 20px;
+}
+
+/*involved*/
+
+#speaker {
+    margin-bottom: 20px;
+}
+
+#involvement {
+    font-size: 30px;
+}
+
+#congress {
+    line-height: 200%;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#leave {
+    cursor: pointer;
+    width: 80px;
+    margin: 0 auto;
+
+    padding: 0.2em 0.2em;
+    background: #797DF0;
+    font-size:35px;
+    font-weight: 700;
+    color: white;
+
+}
