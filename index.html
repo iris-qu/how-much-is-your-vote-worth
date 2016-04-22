@@ -11,7 +11,6 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/jquery.fullPage.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
      <!--JS-->
@@ -19,134 +18,182 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-
-    <script type="text/javascript" src="js/chart.min.js"></script>
-    <script type="text/javascript" src="js/datamap.usa.min.js"></script>
-
     <script type="text/javascript" src="js/app.js"></script>
 
 </head>
 
 <body>
-    <div id="fullpage">
 
-    <div class="section interactive">
+
+    <!-- QUESTIONS -->
+
+    <div id="questions">
 
             <div class="box"> <!-- Guessing Section -->
 
-                <h1 id="title"><i class="fa fa-star"></i> Does my vote count? <i class="fa fa-star"></i></h1>
-                    <p id="typein"> Select your state </p>
-                    <form>
-                        <select name="state" id="statecode">
-                            <option value="AL">AL</option>
-                            <option value="AK">AK</option>
-                            <option value="AZ">AZ</option>
-                            <option value="AR">AR</option>
-                            <option value="CA">CA</option>
-                            <option value="CO">CO</option>
-                            <option value="CT">CT</option>
-                            <option value="DE">DE</option>
-                            <option value="DC">DC</option>
-                            <option value="FL">FL</option>
-                            <option value="GA">GA</option>
-                            <option value="HI">HI</option>
-                            <option value="ID">ID</option>
-                            <option value="IL">IL</option>
-                            <option value="IN">IN</option>
-                            <option value="IA">IA</option>
-                            <option value="KS">KS</option>
-                            <option value="KY">KY</option>
-                            <option value="LA">LA</option>
-                            <option value="ME">ME</option>
-                            <option value="MD">MD</option>
-                            <option value="MA">MA</option>
-                            <option value="MI">MI</option>
-                            <option value="MN">MN</option>
-                            <option value="MS">MS</option>
-                            <option value="MO">MO</option>
-                            <option value="MT">MT</option>
-                            <option value="NE">NE</option>
-                            <option value="NV">NV</option>
-                            <option value="NH">NH</option>
-                            <option value="NJ">NJ</option>
-                            <option value="NM">NM</option>
-                            <option value="NY">NY</option>
-                            <option value="NC">NC</option>
-                            <option value="ND">ND</option>
-                            <option value="OH">OH</option>
-                            <option value="OK">OK</option>
-                            <option value="OR">OR</option>
-                            <option value="PA">PA</option>
-                            <option value="RI">RI</option>
-                            <option value="SC">SC</option>
-                            <option value="SD">SD</option>
-                            <option value="TN">TN</option>
-                            <option value="TX">TX</option>
-                            <option value="UT">UT</option>
-                            <option value="VT">VT</option>
-                            <option value="VA">VA</option>
-                            <option value="WA">WA</option>
-                            <option value="WV">WV</option>
-                            <option value="WI">WI</option>
-                            <option value="WY">WY</option>
-                        </select>
+                <div id="q1">
+                    <h1 id="title"> Can you legally vote in the United States? </h1>
 
-                        <button type="submit" id="btn" name="go"><a href="#secondPage">G O</a></button>
-                    </form>
+                    <div class="content">
+                        <button class="btn" id="yq1">YES</button>
+                        <a href="#result"><button class="btn" id="nq1">NO</button></a>
+
+                        <div class="qDes">
+                            <p id="yesDes">I am a United States Citizen over 18 years old and I can vote in U.S. elections</p>
+                            <p id="noDes">I am not a United States Citizen or I do not have the right to vote in the U.S. elections</p>
+                        </div>
+
+                        <p id="notsure">Not sure? Find out <a href="http://www.youramerica.com/" target='_blank'>HERE</a></p>
+                    </div>
+                </div>
+
+                <div id="q2">
+                    <h1 id="title"> In which state will you be voting? </h1>
+
+                        <form>
+                            <select name="state" id="stateCode">
+                                <option value="">:)</option>
+                                <option value="AL">AL</option>
+                                <option value="AK">AK</option>
+                                <option value="AZ">AZ</option>
+                                <option value="AR">AR</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="CT">CT</option>
+                                <option value="DE">DE</option>
+                                <option value="DC">DC</option>
+                                <option value="FL">FL</option>
+                                <option value="GA">GA</option>
+                                <option value="HI">HI</option>
+                                <option value="ID">ID</option>
+                                <option value="IL">IL</option>
+                                <option value="IN">IN</option>
+                                <option value="IA">IA</option>
+                                <option value="KS">KS</option>
+                                <option value="KY">KY</option>
+                                <option value="LA">LA</option>
+                                <option value="ME">ME</option>
+                                <option value="MD">MD</option>
+                                <option value="MA">MA</option>
+                                <option value="MI">MI</option>
+                                <option value="MN">MN</option>
+                                <option value="MS">MS</option>
+                                <option value="MO">MO</option>
+                                <option value="MT">MT</option>
+                                <option value="NE">NE</option>
+                                <option value="NV">NV</option>
+                                <option value="NH">NH</option>
+                                <option value="NJ">NJ</option>
+                                <option value="NM">NM</option>
+                                <option value="NY">NY</option>
+                                <option value="NC">NC</option>
+                                <option value="ND">ND</option>
+                                <option value="OH">OH</option>
+                                <option value="OK">OK</option>
+                                <option value="OR">OR</option>
+                                <option value="PA">PA</option>
+                                <option value="RI">RI</option>
+                                <option value="SC">SC</option>
+                                <option value="SD">SD</option>
+                                <option value="TN">TN</option>
+                                <option value="TX">TX</option>
+                                <option value="UT">UT</option>
+                                <option value="VT">VT</option>
+                                <option value="VA">VA</option>
+                                <option value="WA">WA</option>
+                                <option value="WV">WV</option>
+                                <option value="WI">WI</option>
+                                <option value="WY">WY</option>
+                            </select>
+
+
+                        </form>
+                    </div>
+
+                    <div id="q3">
+                        <h1 id="title"><i class="fa fa-star"></i> Agree or Disagree <i class="fa fa-star"></i></h1>
+                        <div class="content">
+                            <p> I'm not affiliated with either Democrat or Republican party.</p>
+                            <button class="btn" id="yq3">Agree</button>
+                            <button class="btn" id="nq3">Disagree</button>
+                        </div>
+                    </div>
+
+                    <div id="q4">
+                        <h1 id="title"><i class="fa fa-star"></i> Agree or Disagree <i class="fa fa-star"></i></h1>
+                        <div class="content">
+                            <p> I don't identify with any of the current presidential candidates in the 2016 race.</p>
+                            <a href="#result"><button class="btn" id="yq4" href="#results">Agree</button></a>
+                            <a href="#result"><button class="btn" id="nq4" href="#results">Disagree</button></a>
+                        </div>
+                    </div>
 
             </div>
 
     </div>
 
-    <div class="section slides">
+    <!-- RESULTS -->
 
-            <div class="slide">
+    <div id="answers">
 
-                <div class="left">
-                    <img src="css/assets/cali.svg.png" height="400px">
+            <a name="result"></a>
+
+            <div id="presidential" class="answer">
+                <h2> <i class="fa fa-smile-o"> </i>  Vote in the general election <i class="fa fa-smile-o"></i></h2>
+
+                <div class="sub"> You are NOT in the voting desert!</div>
+
+                <div class="wrapper">
+                    <p id="desertDes"> If this comes up as your first option, then congratulations! You are in one of the few states where your vote for presidential election matters a ton (ONE OF THE PURPLE STATES). This means you are either in a <a href="https://en.wikipedia.org/wiki/Swing_state" target="_blank">SWING STATE</a> (Ohio, Colorado, Iowa, Nevada, New Hampshire, Virginia, and Florida), or you are in a state (Maine and Nebraska) where electoral college is not counted <a href="https://en.wikipedia.org/wiki/Electoral_College_(United_States)" target="_blank">ALL or NOTHING.</a> You are basically deciding for the world, so <a href="http://presidential-candidates.insidegov.com/?utm_source=viz&utm_medium=viz.referral&utm_campaign=viz.ref.980&utm_viz_id=91lI0j4tgc5&utm_pubreferrer=www.ibtimes.com%2Felection-2016-total-delegate-count-democrats-republicans-2330885" target="_blank">study the policies</a>, and make an informed decision for your country.</p>
                 </div>
-
-                <div class="right">
-                    <h2>California</h2>
-
-                    <div id="data">
-                        <p> You vote is not worth one vote, instead, it is it is worth:</p>
-                        <p><strong id="num">0.8</strong> votes (<a href="http://www.ravi.io/how-much-is-one-vote-worth" target="_blank">See full stat</a>) </p>
-
-                        <p>California is a <strong>all or nothing</strong> state, </p>
-                        <p>that means all <strong>55</strong> delegates  went to the majority party: <br> <strong>Democrats</strong></p>
-                    </div>
-
-                    <div id="bar">
-                        <img src="css/assets/bar.png" width="60%">
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <div class="slide">
-
-                <div id="desertTitle"> <i class="fa fa-meh-o"> </i>  The Voting Desert  <i class="fa fa-meh-o"></i></div>
-                <p id="desertDes"> The voting desert portrays which States have a real impact on the election, <br> and which can be considered "deserts" where the majority of votes cast have little effect on the overall election.</p>
                 <img id="desert" src="css/assets/votingdesertmap.png">
 
             </div>
 
-            <div class="slide">
-                <img id="speaker" src="css/assets/speaker.png" width="100px">
-                <h2> Getting your voice heard</h2>
-                <div id="involvement"> Involvement beyond election season <i class="fa fa-hand-peace-o"></i></div>
-                <p>________</p>
+            <div id="primary" class="answer">
 
-                <div id="congress">
-                    <p>Find out who’s your congress men/women are today </p>
-                    <p>and check out what they are working on </p>
+                <h2> <i class="fa fa-check-square-o" aria-hidden="true"></i> Vote in primary/caucus <i class="fa fa-check-square-o" aria-hidden="true"></i></h2>
+                <p>________</p>
+                <p class="wrapper"> <a href="https://en.wikipedia.org/wiki/Open_primaries_in_the_United_States">Some states</a> don’t require voters to be affiliated with a political party in order to vote in the democratic or republican primaries. So, while you can’t vote in more than one party’s primary, you can still push for your preferred candidate. <br> Or, if your state doesn't have a open primary, it has fought its right to secure an early spot for primary voting, early enough for your vote to make a difference. <br> Seize the opportunity and check the primary schedule below: </p>
+
+                <a href="http://www.uspresidentialelectionnews.com/2016-presidential-primary-schedule-calendar"> <img class="bigEmo" src="css/assets/angel.png" width="100px"></a>
+
+
+            </div>
+
+            <div id="hc" class="answer">
+                <img class="bigEmo" src="css/assets/house.png" width="100px">
+                <h2> Vote in senate and house election </h2>
+                <p>________</p>
+                <div class="wrapper">
+                    <p>Only 36.4% of registered voters turned out for midterm elections in 2014, a record compared to the last 70 years. Find out if your state might  made <a href="http://www.270towin.com/2016-house-election/" target="_blank">the list</a> for lowest turnout rates or the largest turnout drops in 2014.<br><a href="http://www.270towin.com/2016-house-election/" target="_blank" style="font-size: 20px;">Get information on 2016 house election. <br> <i class="fa fa-hand-pointer-o" aria-hidden="true" style="font-size: 50px;"></i></a></p>
+
                 </div>
 
-                <div id="leave"><a href="https://www.opencongress.org/people/zipcodelookup" target="_blank">GO</a></div>
+            </div>
+
+            <div id="movement" class="answer">
+                <img class="bigEmo" src="css/assets/speaker.png" width="100px">
+                <h2>Pursue a political cause:<br> Join a movement</h2>
+                <div class="sub"> Involvement beyond election season <i class="fa fa-hand-peace-o"></i></div>
+                <p>________</p>
+
+                <p class="wrapper">You may be a disillusioned voter who wants better for your fellow AMericans, or you simply don't trust politicians to deliver on their campaign promises. Or, you might be one of the millions of immigrants, minors or convicted felons in America that don't have the right to vote. But historically, much of American policy has been shaped by grassroots efforts, and many of these movements do not discriminate based on voting rights. Go through the list below to see how much different you can make. </p>
+                <div id="leave"><a href="http://www.keele.ac.uk/depts/por/usbase.groups.htm" target="_blank">GO</a></div>
+            </div>
+
+            <div id="reachOut" class="answer">
+
+                <h2>Reach out to your<br> <i class="fa fa-user" aria-hidden="true"></i> congressmen and women <i class="fa fa-user" aria-hidden="true"></i></h2>
+
+                <p>________</p>
+
+                <div class="wrapper">
+                    <p>The media devotes a disproportionate level of coverage to the presidential campaign during election years, often in lieu of bringing viewers' and readers' attention to everyday issues. Your congressman or woman might be working and affecting change in issues that could directly affect you. So find out who you representatives and congresspeople are <a href="https://www.govtrack.us/congress/members" target="_blank">
+                    <br> <i class="fa fa-hand-o-right" aria-hidden="true"></i> <img src="css/assets/raise.png" width="100px"></a> <i class="fa fa-hand-o-left" aria-hidden="true"></i> <br> and research what issues they cover. You can corrall a group of people to write to him or her and get your voice(s) heard!</p>
+
+                </div>
+
 
             </div>
 
