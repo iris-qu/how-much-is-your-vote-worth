@@ -5,11 +5,13 @@ $(document).ready(function(){
     $('#q3').hide();
     $('#q4').hide();
 
+    $('#resultPage').hide();
     $('#presidential').hide();
     $('#primary').hide();
     $('#hc').hide();
     $('#reachOut').hide();
     $('#movement').hide();
+    $('#refresh').hide();
 
     var presidential = 0;
     var primary = 0;
@@ -21,6 +23,8 @@ $(document).ready(function(){
 
     $('#yesDes').hide();
     $('#noDes').hide();
+    $('#yesDes4').hide();
+    $('#noDes4').hide();
 
     $('#yq1').mouseover(function(){
         $('#yesDes').show();
@@ -36,6 +40,22 @@ $(document).ready(function(){
 
     $('#nq1').mouseout(function(){
         $('#noDes').hide();
+    });
+
+    $('#yq4').mouseover(function(){
+        $('#yesDes4').show();
+    });
+
+    $('#yq4').mouseout(function(){
+        $('#yesDes4').hide();
+    });
+
+    $('#nq4').mouseover(function(){
+        $('#noDes4').show();
+    });
+
+    $('#nq4').mouseout(function(){
+        $('#noDes4').hide();
     });
 
     $('#yq1').click(function(){
@@ -125,12 +145,12 @@ $(document).ready(function(){
     //Question 3
 
     $('#yq3').click(function(){
-        primary += 5;
         $('#q3').hide();
         $('#q4').show();
     });
 
     $('#nq3').click(function(){
+        primary += 5;
         $('#q3').hide();
         $('#q4').show();
     });
@@ -138,16 +158,19 @@ $(document).ready(function(){
     //Question 4
 
     $('#yq4').click(function(){
-        houseCongressional += 5;
         calculate();
     });
 
     $('#nq4').click(function(){
+        houseCongressional += 5;
         calculate();
     });
 
 
     function calculate() {
+
+        $('#resultPage').show();
+        $('#refresh').show();
 
         console.log(presidential);
         console.log(primary);
@@ -174,27 +197,22 @@ $(document).ready(function(){
 
         if(presidential > 0) {
             $('#presidential').show();
-            $('#presidential').addClass('slide');
         }
 
         if(primary > 0) {
             $('#primary').show();
-            $('#primary').addClass('slide');
         }
 
         if(houseCongressional > 0) {
             $('#hc').show();
-            $('#hc').addClass('slide');
         }
 
         if(movement > 0) {
             $('#movement').show();
-            $('#movement').addClass('slide');
         }
 
         if(reachout> 0) {
             $('#reachOut').show();
-            $('#reachOut').addClass('slide');
         }
     }
 

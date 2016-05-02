@@ -27,6 +27,9 @@
 
     <!-- QUESTIONS -->
 
+    <div id="refresh"></div>
+    <div id="what"></div>
+
     <div id="questions">
 
             <div class="box"> <!-- Guessing Section -->
@@ -111,20 +114,25 @@
                     </div>
 
                     <div id="q3">
-                        <h1 id="title"><i class="fa fa-star"></i> Agree or Disagree <i class="fa fa-star"></i></h1>
+                        <h1 id="title"><i class="fa fa-star"></i> Are you registered with either of the major political parties?<i class="fa fa-star"></i></h1>
                         <div class="content">
-                            <p> I'm not affiliated with either Democrat or Republican party.</p>
-                            <button class="btn" id="yq3">Agree</button>
-                            <button class="btn" id="nq3">Disagree</button>
+
+                            <button class="btn" id="yq3">Yes</button>
+                            <button class="btn" id="nq3">No</button>
                         </div>
                     </div>
 
                     <div id="q4">
-                        <h1 id="title"><i class="fa fa-star"></i> Agree or Disagree <i class="fa fa-star"></i></h1>
+                        <h1 id="title"><i class="fa fa-star"></i> Have you decided which candidate to vote for in the 2016 presidential election? <i class="fa fa-star"></i></h1>
                         <div class="content">
-                            <p> I don't identify with any of the current presidential candidates in the 2016 race.</p>
-                            <a href="#result"><button class="btn" id="yq4" href="#results">Agree</button></a>
-                            <a href="#result"><button class="btn" id="nq4" href="#results">Disagree</button></a>
+                            <a href="#result"><button class="btn" id="yq4" href="#results">Yes</button></a>
+                            <a href="#result"><button class="btn" id="nq4" href="#results">No</button></a>
+
+                            <div class="qDes">
+                                <p id="yesDes4">I'm prepared to vote for my preferred candidate this fall</p>
+                                <p id="noDes4">I'm still undecided</p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -137,6 +145,13 @@
     <div id="answers">
 
             <a name="result"></a>
+
+            <div id="resultPage">
+                <div class="sub">
+                    To maximize your political influence in the United States,<br>
+                    <strong><i class="fa fa-hand-spock-o" aria-hidden="true"></i> we suggest you to:</strong>
+                </div>
+            </div>
 
             <div id="presidential" class="answer">
                 <h2> <i class="fa fa-smile-o"> </i>  Vote in the general election <i class="fa fa-smile-o"></i></h2>
@@ -154,7 +169,7 @@
 
                 <h2> <i class="fa fa-check-square-o" aria-hidden="true"></i> Vote in primary/caucus <i class="fa fa-check-square-o" aria-hidden="true"></i></h2>
                 <p>________</p>
-                <p class="wrapper"> <a href="https://en.wikipedia.org/wiki/Open_primaries_in_the_United_States">Some states</a> don’t require voters to be affiliated with a political party in order to vote in the democratic or republican primaries. So, while you can’t vote in more than one party’s primary, you can still push for your preferred candidate. <br> Or, if your state doesn't have a open primary, it has fought its right to secure an early spot for primary voting, early enough for your vote to make a difference. <br> Seize the opportunity and check the primary schedule below: </p>
+                <p class="wrapper"> <a href="https://en.wikipedia.org/wiki/Open_primaries_in_the_United_States" target='_blank'>Some states</a> don’t require voters to be affiliated with a political party in order to vote in the democratic or republican primaries. So, while you can’t vote in more than one party’s primary, you can still push for your preferred candidate. <br> Or, if your state doesn't have a open primary, it has fought its right to secure an early spot for primary voting, early enough for your vote to make a difference. <br> Seize the opportunity and check the primary schedule below: </p>
 
                 <a href="http://www.uspresidentialelectionnews.com/2016-presidential-primary-schedule-calendar"> <img class="bigEmo" src="css/assets/angel.png" width="100px"></a>
 
@@ -194,8 +209,8 @@
 
                 </div>
 
-
             </div>
+
 
     </div>
 

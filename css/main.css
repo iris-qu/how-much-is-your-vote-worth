@@ -118,7 +118,7 @@ button:focus {outline:0;}
 select:focus {outline:0;}
 
 .content {
-    padding-top: 20%;
+    padding-top: 17%;
     width: 86%;
     margin: 0 auto;
     font-size: 20px;
@@ -146,13 +146,10 @@ select:focus {outline:0;}
 
 }
 
-#yesDes {
+.qDes {
     font-size: 15px;
 }
 
-#noDes {
-    font-size: 15px;
-}
 
 /* Q2 */
 
@@ -193,17 +190,22 @@ form {
 
 #yq4 {
     width: 40%;
-    margin-top: 10%;
     margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 #nq4 {
     width: 40%;
-    margin-top: 10%;
     margin-left: 10px;
+    margin-bottom: 30px;
 }
 
 /* ANSWERS */
+
+#resultPage{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 
 h2 {
     font-size: 40px;
@@ -230,11 +232,11 @@ div.fp-controlArrow{
 }
 
 .wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .bigEmo {
