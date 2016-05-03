@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $('#q1').show();
+    $('#intro').show();
+    $('#q1').hide();
     $('#q2').hide();
     $('#q3').hide();
     $('#q4').hide();
@@ -11,13 +12,22 @@ $(document).ready(function(){
     $('#hc').hide();
     $('#reachOut').hide();
     $('#movement').hide();
-    $('#refresh').hide();
+    $('#social').hide();
 
     var presidential = 0;
     var primary = 0;
     var houseCongressional = 0;
     var reachout = 0;
     var movement = 0;
+
+    $('#introBtn').click(function(){
+        $('#intro').hide();
+        $('#q1').show();
+    });
+
+    $('#refresh').click(function(){
+        location.reload();
+    })
 
     //Question 1
 
@@ -40,22 +50,6 @@ $(document).ready(function(){
 
     $('#nq1').mouseout(function(){
         $('#noDes').hide();
-    });
-
-    $('#yq4').mouseover(function(){
-        $('#yesDes4').show();
-    });
-
-    $('#yq4').mouseout(function(){
-        $('#yesDes4').hide();
-    });
-
-    $('#nq4').mouseover(function(){
-        $('#noDes4').show();
-    });
-
-    $('#nq4').mouseout(function(){
-        $('#noDes4').hide();
     });
 
     $('#yq1').click(function(){
@@ -157,6 +151,22 @@ $(document).ready(function(){
 
     //Question 4
 
+    $('#yq4').mouseover(function(){
+        $('#yesDes4').show();
+    });
+
+    $('#yq4').mouseout(function(){
+        $('#yesDes4').hide();
+    });
+
+    $('#nq4').mouseover(function(){
+        $('#noDes4').show();
+    });
+
+    $('#nq4').mouseout(function(){
+        $('#noDes4').hide();
+    });
+
     $('#yq4').click(function(){
         calculate();
     });
@@ -169,8 +179,10 @@ $(document).ready(function(){
 
     function calculate() {
 
+        $('#questions').hide();
+
         $('#resultPage').show();
-        $('#refresh').show();
+        $('#social').show();
 
         console.log(presidential);
         console.log(primary);
