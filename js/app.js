@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
     $('#intro').show();
     $('#q1').hide();
     $('#q2').hide();
@@ -29,7 +27,7 @@ $(document).ready(function(){
 
     $('#refresh').click(function(){
         location.reload();
-    })
+    });
 
     //Question 1
 
@@ -178,6 +176,26 @@ $(document).ready(function(){
         calculate();
     });
 
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+    });
+
+    $('button').mouseenter(function(){
+        $(this).animateCss('pulse');
+    });
+
+    $('#refresh').mouseenter(function(){
+        $(this).animateCss('tada');
+    });
+
+    $('.social').mouseenter(function(){
+        $(this).animateCss('tada');
+    });
 
     function calculate() {
 
