@@ -20,11 +20,12 @@ html body{
     overflow: hidden;
 }
 
+
 a, a:link, a:visited, a:hover, a:active {
     color: white;
     cursor: pointer;
     font-weight: 800;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*REFRESH*/
@@ -197,6 +198,10 @@ form {
 }
 
 /* ANSWERS */
+
+ul {
+    list-style-type: none;
+}
 
 #resultPage{
     padding-top: 100px;

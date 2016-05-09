@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     $('#intro').show();
     $('#q1').hide();
     $('#q2').hide();
@@ -207,25 +209,37 @@ $(document).ready(function(){
 
         console.log(rank);
 
+
         if(presidential > 0) {
             $('#presidential').show();
+            if(presidential>=10){
+                $(this).parent().prepend(this);
+            }
         }
 
         if(primary > 0) {
             $('#primary').show();
+            if(primary>=10){
+                $(this).parent().prepend(this);
+            }
         }
 
         if(houseCongressional > 0) {
             $('#hc').show();
+            if(houseCongressional>=10){
+                $(this).parent().prepend(this);
+            }
         }
 
         if(movement > 0) {
             $('#movement').show();
+
         }
 
-        if(reachout> 0) {
+        if(reachout > 0) {
             $('#reachOut').show();
         }
+
     }
 
 });
