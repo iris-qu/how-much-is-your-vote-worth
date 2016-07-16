@@ -212,7 +212,7 @@ $(document).ready(function(){
 
         var total = presidential + primary + houseCongressional + movement + reachout;
 
-        if(total === 0){
+        if(total == 0){
             movement += 5;
             reachout += 5;
         }
