@@ -193,6 +193,10 @@ $(document).ready(function(){
         $(this).animateCss('tada');
     });
 
+    $('#qanda').mouseenter(function(){
+        $(this).animateCss('tada');
+    });
+
     $('.social').mouseenter(function(){
         $(this).animateCss('tada');
     });
